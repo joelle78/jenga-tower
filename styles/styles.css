@@ -13,6 +13,7 @@
 .scene, .shape, .face, .face-wrapper, .cr {
     position: absolute;
     transform-style: preserve-3d;
+
 }
 .scene {
     width: 80em;
@@ -49,7 +50,8 @@
     left: 0;
     top: 0;
     width: 100%;
-    height: 100%
+    height: 100%;
+
 }
 .side {
     left: 50%;
@@ -92,44 +94,14 @@
 
 }
 /* .cub-1 styles */
-.cuboid-1{
-    animation: slide-in-left 2s;
-}
-
-@-webkit-keyframes slide-in-left {
-    0% {
-        -webkit-transform: translateZ(-1000px);
-        transform: translateZ(-1000px);
-        opacity: 0;
-    }
-    100% {
-        -webkit-transform: translateZ(0);
-        transform: translateZ(0);
-        opacity: 1;
-    }
-}
-/*@keyframes slide-in-left {*/
-/*    0% {*/
-/*        -webkit-transform: translateX(-540px);*/
-/*        transform: translateX(-540px);*/
-/*        opacity: 0;*/
-/*    }*/
-/*    100% {*/
-/*        -webkit-transform: translateX(0);*/
-/*        transform: translateX(0);*/
-/*        opacity: 1;*/
-/*    }*/
-/*}*/
-
 .cub-1 {
-    transform:translate3D(0em, 0em, 0em) rotateX(-540deg) rotateY(-180deg) rotateZ(90deg);
-    opacity:1;
-    width:6em;
-    height:10em;
-    margin:-5em 0 0 -3em;
+    transform: translate3D(0em, 0em, 0em) rotateX(-540deg) rotateY(-180deg) rotateZ(90deg);
+    opacity: 1;
 
+    width: 6em;
+    height: 10em;
+    margin: -5em 0 0 -3em;
 }
-
 .cub-1 .ft {
     transform:translateZ(15em);
 
@@ -154,15 +126,13 @@
 
 }
 
-
-
 /* .cub-2 styles */
 .cub-2 {
-    transform:translate3D(10em, 0em, 0em) rotateX(-540deg) rotateY(-180deg) rotateZ(90deg);
-    opacity:1;
-    width:6em;
-    height:10em;
-    margin:-5em 0 0 -3em;
+    transform: translate3D(10em, 0em, 0em) rotateX(-540deg) rotateY(-180deg) rotateZ(90deg);
+    opacity: 1;
+    width: 6em;
+    height: 10em;
+    margin: -5em 0 0 -3em;
 }
 .cub-2 .ft {
     transform:translateZ(15em);
@@ -213,7 +183,17 @@
     width:6em;
     height:10em;
     margin:-5em 0 0 -3em;
+
+    animation: slideIn-6 2s forwards;
+    animation-delay: 10s;
 }
+
+@keyframes slideIn-6 {
+    0% { left: -900px; }
+    100% { right: 0; }
+}
+
+
 .cub-4 .ft {
     transform:translateZ(15em);
 }
@@ -288,6 +268,14 @@
     width:6em;
     height:10em;
     margin:-5em 0 0 -3em;
+
+    animation: slideIn-5 2s forwards;
+    animation-delay: 8s;
+}
+
+@keyframes slideIn-5 {
+    0% { left: 900px; }
+    100% { right: 0; }
 }
 .cub-7 .ft {
     transform:translateZ(15em);
@@ -308,11 +296,11 @@
 }
 /* .cub-8 styles */
 .cub-8 {
-    transform:translate3D(10em, -12em, 0em) rotateX(-540deg) rotateY(-360deg) rotateZ(90deg);
-    opacity:1;
-    width:6em;
-    height:10em;
-    margin:-5em 0 0 -3em;
+    transform: translate3D(10em, -12em, 0em) rotateX(-540deg) rotateY(-360deg) rotateZ(90deg);
+    opacity: 1;
+    width: 6em;
+    height: 10em;
+    margin: -5em 0 0 -3em;
 }
 .cub-8 .ft {
     transform:translateZ(15em);
@@ -363,6 +351,14 @@
     width:6em;
     height:10em;
     margin:-5em 0 0 -3em;
+
+    animation: slideIn-4 2s forwards;
+    animation-delay: 6s;
+}
+
+@keyframes slideIn-4 {
+    0% { left: -900px; }
+    100% { right: 0; }
 }
 .cub-10 .ft {
     transform:translateZ(15em);
@@ -438,6 +434,14 @@
     width:6em;
     height:10em;
     margin:-5em 0 0 -3em;
+
+    animation: slideIn-3 2s forwards;
+    animation-delay: 4s;
+}
+
+@keyframes slideIn-3 {
+    0% { left: 900px; }
+    100% { right: 0; }
 }
 .cub-13 .ft {
     transform:translateZ(15em);
@@ -508,12 +512,21 @@
 }
 /* .cub-16 styles */
 .cub-16 {
-    transform:translate3D(10em, -29.75em, 10em) rotateX(-540deg) rotateY(-630deg) rotateZ(90deg);
-    opacity:1;
-    width:6em;
-    height:10em;
-    margin:-5em 0 0 -3em;
+    transform: translate3D(10em, -29.75em, 10em) rotateX(-540deg) rotateY(-630deg) rotateZ(90deg);
+    opacity: 1;
+    width: 6em;
+    height: 10em;
+    margin: -5em 0 0 -3em;
+
+    animation: slideIn-2 2s forwards;
+    animation-delay: 2s;
 }
+
+@keyframes slideIn-2 {
+    0% { left: -400px; }
+    100% { right: 0; }
+}
+
 .cub-16 .ft {
     transform:translateZ(15em);
 }
@@ -564,6 +577,7 @@
     height:10em;
     margin:-5em 0 0 -3em;
 }
+
 .cub-18 .ft {
     transform:translateZ(15em);
 }
@@ -588,7 +602,22 @@
     width:6em;
     height:10em;
     margin:-5em 0 0 -3em;
+
+    animation: slideIn 2s forwards;
+    /*animation-delay: 2s;*/
+
+
 }
+
+@keyframes slideIn {
+    0% { left: 900px; }
+    100% { right: 0; }
+}
+
+
+
+
+
 .cub-19 .ft {
     transform:translateZ(15em);
 }
