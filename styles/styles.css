@@ -1,4 +1,9 @@
-/* /!\ You need to add vendor prefixes in order to render the CSS properly (or simply use http://leaverou.github.io/prefixfree/) /!\ */ #tridiv {
+.flex-wrapper-header{
+    display: flex;
+    flex-direction: row;
+}
+
+#tridiv {
     perspective: 800px;
     position: absolute;
     overflow: hidden;
@@ -185,12 +190,21 @@
     margin:-5em 0 0 -3em;
 
     animation: slideIn-6 2s forwards;
-    animation-delay: 10s;
+    animation-delay: 5s;
+    visibility: hidden;
 }
 
 @keyframes slideIn-6 {
-    0% { left: -900px; }
-    100% { right: 0; }
+    0% {
+        left: -900px;
+        visibility: visible;
+
+    }
+    100% {
+        right: 0;
+        visibility: visible;
+
+    }
 }
 
 
@@ -270,12 +284,19 @@
     margin:-5em 0 0 -3em;
 
     animation: slideIn-5 2s forwards;
-    animation-delay: 8s;
+    animation-delay: 4s;
+    visibility: hidden;
 }
 
 @keyframes slideIn-5 {
-    0% { left: 900px; }
-    100% { right: 0; }
+    0% {
+        left: 900px;
+        visibility: visible;
+    }
+    100% {
+        right: 0;
+        visibility: visible;
+    }
 }
 .cub-7 .ft {
     transform:translateZ(15em);
@@ -353,12 +374,21 @@
     margin:-5em 0 0 -3em;
 
     animation: slideIn-4 2s forwards;
-    animation-delay: 6s;
+    animation-delay: 3s;
+    visibility: hidden;
 }
 
 @keyframes slideIn-4 {
-    0% { left: -900px; }
-    100% { right: 0; }
+    0% {
+        left: -900px;
+        visibility: visible;
+
+    }
+    100% {
+        right: 0;
+        visibility: visible;
+
+    }
 }
 .cub-10 .ft {
     transform:translateZ(15em);
@@ -436,12 +466,21 @@
     margin:-5em 0 0 -3em;
 
     animation: slideIn-3 2s forwards;
-    animation-delay: 4s;
+    animation-delay: 2s;
+    visibility: hidden;
 }
 
 @keyframes slideIn-3 {
-    0% { left: 900px; }
-    100% { right: 0; }
+    0% {
+        left: 900px;
+        visibility: visible;
+
+    }
+    100% {
+        right: 0;
+        visibility: visible;
+
+    }
 }
 .cub-13 .ft {
     transform:translateZ(15em);
@@ -519,12 +558,21 @@
     margin: -5em 0 0 -3em;
 
     animation: slideIn-2 2s forwards;
-    animation-delay: 2s;
+    animation-delay: 1s;
+    visibility: hidden;
 }
 
 @keyframes slideIn-2 {
-    0% { left: -400px; }
-    100% { right: 0; }
+    0% {
+        left: -400px;
+        visibility: visible;
+
+    }
+    100% {
+        right: 0;
+        visibility: visible;
+
+    }
 }
 
 .cub-16 .ft {
@@ -598,25 +646,24 @@
 /* .cub-19 styles */
 .cub-19 {
     transform:translate3D(20em, -35.75em, 0em) rotateX(-540deg) rotateY(-720deg) rotateZ(90deg);
-    opacity:1;
     width:6em;
     height:10em;
     margin:-5em 0 0 -3em;
-
     animation: slideIn 2s forwards;
     /*animation-delay: 2s;*/
-
-
+    visibility: hidden;
 }
 
 @keyframes slideIn {
-    0% { left: 900px; }
-    100% { right: 0; }
+    0% { left: 1000px;
+        visibility: visible;
+
+    }
+    100% {
+        right: 0px;
+        visibility: visible;
+    }
 }
-
-
-
-
 
 .cub-19 .ft {
     transform:translateZ(15em);
