@@ -32,7 +32,7 @@ document.getElementById('build-button').addEventListener("click",
         document.getElementById('buildCube7').style.animationDelay = "3.2s";
     });
 
-//Cube 8 open application
+//Cube 4 open application
 document.getElementById('build-button').addEventListener("click",
     function () {
         document.getElementById('buildCube4').style.animation = "slideIn-6 2s forwards";

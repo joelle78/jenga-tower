@@ -1,37 +1,50 @@
+/* CSS RESET */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box
+}
+
 .flex-wrapper-header{
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
 }
 
-.flex-wrapper-header h1 {
-    font-size: 4em;
-    padding-left: 3em;
+.par-container-header{
+    z-index: 1;
+    padding-top: 4em;
 }
 
-#tridiv {
-    perspective: 900px;
-    position: absolute;
-    overflow: hidden;
-    width: 100%;
-    height: 100%;
-    background: transparent;
-    font-size: 55%;
-}
-.face {
-    box-shadow: inset 0 0 0 1px rgba(0, 0, 0, 0.4);
-}
-.scene, .shape, .face, .face-wrapper, .cr {
-    position: absolute;
-    transform-style: preserve-3d;
+    #tridiv {
+        perspective: 900px;
+        position: absolute;
+        overflow: hidden;
+        width: 100%;
+        height: 100%;
+        background: transparent;
+        font-size: 55%;
+    }
 
-}
-.scene {
-    width: 90em;
-    height: 90em;
-    top: 50%;
-    left: 50%;
-    margin: -40em 0 0 -40em;
-}
+    .face {
+        box-shadow: inset 0 0 0 1px rgba(0, 0, 0, 0.4);
+    }
+
+    .scene, .shape, .face, .face-wrapper, .cr {
+        position: absolute;
+        transform-style: preserve-3d;
+    }
+
+    .scene {
+        width: 90em;
+        height: 90em;
+        top: 50%;
+        left: 50%;
+        margin: -40em 0 0 -40em;
+    }
+
+
+
+
 .shape {
     top: 50%;
     left: 50%;
@@ -44,16 +57,19 @@
     overflow: hidden;
     transform-origin: 0 0;
     backface-visibility: hidden;
-    /* hidden by default, prevent blinking and other weird rendering glitchs */
+
 }
 .face {
     background-size: 100% 100%!important;
     background-position: center;
+
 }
 .face-wrapper .face {
     left: 100%;
     width: 100%;
-    height: 100%
+    height: 100%;
+
+
 }
 .photon-shader {
     position: absolute;
@@ -62,9 +78,11 @@
     width: 100%;
     height: 100%;
 
+
 }
 .side {
     left: 50%;
+
 }
 .cr, .cr .side {
     height: 100%;
