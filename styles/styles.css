@@ -1,16 +1,21 @@
 .flex-wrapper-header{
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
+}
+
+.flex-wrapper-header h1 {
+    font-size: 4em;
+    padding-left: 3em;
 }
 
 #tridiv {
-    perspective: 800px;
+    perspective: 900px;
     position: absolute;
     overflow: hidden;
     width: 100%;
     height: 100%;
     background: transparent;
-    font-size: 50%;
+    font-size: 55%;
 }
 .face {
     box-shadow: inset 0 0 0 1px rgba(0, 0, 0, 0.4);
@@ -21,8 +26,8 @@
 
 }
 .scene {
-    width: 80em;
-    height: 80em;
+    width: 90em;
+    height: 90em;
     top: 50%;
     left: 50%;
     margin: -40em 0 0 -40em;
@@ -98,6 +103,16 @@
     top: 100%;
 
 }
+
+.scene p {
+    /*center text on one line*/
+    white-space: nowrap;
+    font-size: 2.5em;
+    padding-left: 1em;
+    transform: rotate(90deg);
+}
+
+
 /* .cub-1 styles */
 .cub-1 {
     transform: translate3D(0em, 0em, 0em) rotateX(-540deg) rotateY(-180deg) rotateZ(90deg);
@@ -189,8 +204,8 @@
     height:10em;
     margin:-5em 0 0 -3em;
 
-    animation: slideIn-6 2s forwards;
-    animation-delay: 5s;
+    /*animation: slideIn-6 2s forwards;*/
+    /*animation-delay: 5s;*/
     visibility: hidden;
 }
 
@@ -283,8 +298,8 @@
     height:10em;
     margin:-5em 0 0 -3em;
 
-    animation: slideIn-5 2s forwards;
-    animation-delay: 4s;
+    /*animation: slideIn-5 2s forwards;*/
+    /*animation-delay: 4s;*/
     visibility: hidden;
 }
 
@@ -373,8 +388,8 @@
     height:10em;
     margin:-5em 0 0 -3em;
 
-    animation: slideIn-4 2s forwards;
-    animation-delay: 3s;
+    /*animation: slideIn-4 2s forwards;*/
+    /*animation-delay: 3s;*/
     visibility: hidden;
 }
 
@@ -465,8 +480,8 @@
     height:10em;
     margin:-5em 0 0 -3em;
 
-    animation: slideIn-3 2s forwards;
-    animation-delay: 2s;
+    /*animation: slideIn-3 2s forwards;*/
+    /*animation-delay: 2s;*/
     visibility: hidden;
 }
 
@@ -557,8 +572,8 @@
     height: 10em;
     margin: -5em 0 0 -3em;
 
-    animation: slideIn-2 2s forwards;
-    animation-delay: 1s;
+    /*animation: slideIn-2 2s forwards;*/
+    /*animation-delay: 1s;*/
     visibility: hidden;
 }
 
@@ -649,7 +664,8 @@
     width:6em;
     height:10em;
     margin:-5em 0 0 -3em;
-    animation: slideIn 2s forwards;
+
+    /*animation: slideIn 2s forwards;*/
     /*animation-delay: 2s;*/
     visibility: hidden;
 }
@@ -682,6 +698,10 @@
 .cub-19 .face {
     background-color:#FFFFFF;
 }
+
+
+
+
 /* .cub-20 styles */
 .cub-20 {
     transform:translate3D(10.125em, -35.75em, 0.125em) rotateX(-540deg) rotateY(-720deg) rotateZ(90deg);
@@ -732,3 +752,4 @@
 .cub-21 .face {
     background-color:#FFFFFF;
 }
+
